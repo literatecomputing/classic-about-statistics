@@ -1,5 +1,7 @@
 # classic-about-statistics
 
-**Theme Summary**
+**Adds the old statistics under about-after-moderators on about**
 
-For more information, please see: **url to meta topic**
+This puts back the old statistics on the about page.
+
+It tries to hide
