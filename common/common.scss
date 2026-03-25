@@ -1,14 +1,19 @@
+@use "lib/viewport";
+
 .about__activities {
   display: none;
 }
+
 .about__right-side {
   h3:last-of-type {
     display: none;
   }
 }
+
 h3:contains("Site activity") {
   display: none !important;
 }
+
 .classic-about {
   c-stats {
     color: purple;
@@ -19,7 +24,7 @@ h3:contains("Site activity") {
     padding: 1em 1em;
     margin-bottom: 1em;
 
-    @include breakpoint(tablet) {
+    @include viewport.until(md) {
       flex-direction: column;
     }
 
@@ -27,6 +32,7 @@ h3:contains("Site activity") {
       margin-right: 3px;
     }
   }
+
   table {
     td {
       padding: 0.67em;
@@ -44,7 +50,7 @@ h3:contains("Site activity") {
   &__stats-item {
     flex: 1 0 fit-content;
 
-    @include breakpoint(tablet) {
+    @include viewport.until(md) {
       margin-bottom: 1em;
 
       &:last-child {
