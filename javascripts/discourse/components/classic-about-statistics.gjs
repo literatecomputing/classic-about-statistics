@@ -1,7 +1,7 @@
 import Component from "@glimmer/component";
 import { concat, get } from "@ember/helper";
-import { number } from "discourse/lib/formatter";
 import icon from "discourse/helpers/d-icon";
+import { number } from "discourse/lib/formatter";
 import { i18n } from "discourse-i18n";
 // html/hbs From https://github.com/discourse/discourse/blob/cc447a1ae34466e6c92ba59a387165f4c213a326/app/assets/javascripts/discourse/app/templates/about.hbs#L142
 
