@@ -1,7 +1,7 @@
 import Component from "@glimmer/component";
 import { concat, get } from "@ember/helper";
-import icon from "discourse/helpers/d-icon";
 import { number } from "discourse/lib/formatter";
+import dIcon from "discourse/ui-kit/helpers/d-icon";
 import { i18n } from "discourse-i18n";
 // html/hbs From https://github.com/discourse/discourse/blob/cc447a1ae34466e6c92ba59a387165f4c213a326/app/assets/javascripts/discourse/app/templates/about.hbs#L142
 
@@ -12,7 +12,7 @@ export default class ClassicAboutStatistics extends Component {
 
   <template>
     <section class="classic-about c-stats">
-      <h3>{{icon "far-chart-bar"}} {{i18n "about.stats"}}</h3>
+      <h3>{{dIcon "far-chart-bar"}} {{i18n "about.stats"}}</h3>
       <table class="table">
         <thead>
           <tr>
